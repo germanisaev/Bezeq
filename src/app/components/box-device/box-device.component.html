@@ -1,0 +1,21 @@
+<mat-card class="card">
+
+    <mat-card-header>
+      <mat-card-title>{{ box.WebSiteDeviceName }}</mat-card-title>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <p class="card-image">
+        <img mat-card-image src="_images/{{box.Picture}}.png" class="image-card" alt="avatar">
+      </p>
+      
+      <p>{{ box.DeviceTypeHebrew }}</p>
+
+      <mat-button-toggle (click)="toggleColor()">
+        <mat-icon [style.backgroundColor]="toggleClicked[index] ? 'green' : 'red'"></mat-icon>
+      </mat-button-toggle>
+
+      <p>{{ box.LastReportDate }} תאריך עדכון טחרון:</p>
+    </mat-card-content>
+
+</mat-card>

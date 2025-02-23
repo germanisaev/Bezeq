@@ -1,0 +1,254 @@
+{
+  "devices": [
+    {
+      "InstallDate": "2025-01-13T20:31:12.833Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "גלאי תנועה",
+      "DeviceId": "1",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "גלאי תנועה לחדר ארונות",
+      "LastReportDate": "2025-02-21 07:45:28",
+      "Picture": "motion_hanxi",
+      "id": "6d4b"
+    },
+    {
+      "InstallDate": "2025-01-13T20:39:45.24Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "גלאי תנועה",
+      "DeviceId": "2",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "גלאי תנועה לחדר אמבטיה",
+      "LastReportDate": "2025-02-23 15:54:41",
+      "Picture": "motion_philio",
+      "id": "7d7c"
+    },
+    {
+      "InstallDate": "2025-01-13T20:41:13.71Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "גלאי דלת/חלון",
+      "DeviceId": "3",
+      "DeviceType": "Contact",
+      "WebSiteDeviceName": "חיישן דלת כניסה",
+      "LastReportDate": "2025-02-23 15:55:15",
+      "Picture": "contact_hanxi",
+      "id": "eca1"
+    },
+    {
+      "InstallDate": "2025-01-27T19:21:54.1Z",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "גלאי דלת/חלון",
+      "DeviceId": "4",
+      "DeviceType": "Contact",
+      "WebSiteDeviceName": "חיישן דלת מרפסת",
+      "LastReportDate": "2025-02-23 10:37:23",
+      "Picture": "contact_hanxi",
+      "id": "6dc7"
+    },
+    {
+      "InstallDate": "2025-01-13T22:16:52.317Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "גלאי הצפה",
+      "DeviceId": "5",
+      "DeviceType": "Water",
+      "WebSiteDeviceName": "חיישן הצפה",
+      "LastReportDate": "2025-02-21 07:48:19",
+      "Picture": "water_philio",
+      "id": "9bff"
+    },
+    {
+      "InstallDate": "2025-01-24T13:41:44.14Z",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "בקר דוד",
+      "DeviceId": "1200",
+      "DeviceType": "Boiler",
+      "WebSiteDeviceName": "דוד",
+      "LastReportDate": "2025-02-21 07:41:35",
+      "Picture": "boiler_mco_rect",
+      "id": "fb30"
+    },
+    {
+      "InstallDate": "2025-01-24T14:46:32.787Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "בקר תאורה",
+      "DeviceId": "1201",
+      "DeviceType": "ZwaveLight",
+      "WebSiteDeviceName": "בקר תאורה למרפסת שמש",
+      "LastReportDate": "2025-02-21 07:43:32",
+      "Picture": "zwavelight_mcohome_rect",
+      "id": "e8b0"
+    },
+    {
+      "InstallDate": "2025-01-24T14:46:41.39Z",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "בקר תאורה",
+      "DeviceId": "1202",
+      "DeviceType": "ZwaveLight",
+      "WebSiteDeviceName": "חיישן תאורת כניסה",
+      "LastReportDate": "2025-02-21 07:43:36",
+      "Picture": "zwavelight_mcohome_rect",
+      "id": "dd56"
+    },
+    {
+      "InstallDate": "2025-01-13T20:59:11.21Z",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "מצלמה",
+      "DeviceId": "2048",
+      "DeviceType": "Camera",
+      "WebSiteDeviceName": "מצלמת רשת ביתית",
+      "LastReportDate": "2025-02-21 07:41:44",
+      "Picture": "motion_hanxi",
+      "id": "f622"
+    },
+    {
+      "InstallDate": "2025-01-24T14:46:32.787Z",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "בקר תאורה",
+      "DeviceId": "2049",
+      "DeviceType": "ZwaveLight",
+      "WebSiteDeviceName": "חיישן תאורת מרפסת שירות",
+      "LastReportDate": "2025-02-21 00:47:11",
+      "Picture": "zwavelight_mcohome_rect",
+      "id": "3a0b"
+    },
+    {
+      "id": "0afb",
+      "DeviceId": "2050",
+      "InstallDate": "2025-02-21 00:47:11",
+      "LastReportDate": "2025-02-21 07:45:30",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "גלאי תנועה",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "גלאי תנועה חיצונית",
+      "Picture": "motion_hanxi"
+    },
+    {
+      "id": "9ee2",
+      "DeviceId": 12,
+      "InstallDate": "2025-02-21 03:53:10",
+      "LastReportDate": "2025-02-21 07:45:33",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "גלאי תנועה",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "גלאי תנועה למזדרון",
+      "Picture": "motion_hanxi"
+    },
+    {
+      "id": "aa82",
+      "DeviceId": 13,
+      "InstallDate": "2025-02-21 04:01:11",
+      "LastReportDate": "2025-02-21 07:48:22",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "גלאי הצפה",
+      "DeviceType": "Water",
+      "WebSiteDeviceName": "חיישן הצפה",
+      "Picture": "water_philio"
+    },
+    {
+      "id": "903e",
+      "DeviceId": 14,
+      "InstallDate": "2025-02-21 04:16:48",
+      "LastReportDate": "2025-02-21 06:07:31",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "דוד",
+      "DeviceType": "Boiler",
+      "WebSiteDeviceName": "דוד שמש",
+      "Picture": "boiler_mco_rect"
+    },
+    {
+      "id": "8f7e",
+      "DeviceId": 15,
+      "InstallDate": "2025-02-21 04:19:35",
+      "LastReportDate": "2025-02-21 07:48:24",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "גלאי הצפה",
+      "DeviceType": "ZwaveLight",
+      "WebSiteDeviceName": "חיישן הצפה",
+      "Picture": "water_philio"
+    },
+    {
+      "id": "8cc2",
+      "DeviceId": 16,
+      "InstallDate": "2025-02-21 04:43:58",
+      "LastReportDate": "2025-02-21 04:51:09",
+      "DeviceOK": 0,
+      "DeviceTypeHebrew": "בקר תאורה",
+      "DeviceType": "ZwaveLight",
+      "WebSiteDeviceName": "בקר תאורה חיצונית",
+      "Picture": "zwavelight_mcohome_rect"
+    },
+    {
+      "id": "43d6",
+      "DeviceId": 17,
+      "InstallDate": "2025-02-21 06:45:34",
+      "LastReportDate": "2025-02-21 06:45:34",
+      "DeviceOK": true,
+      "DeviceTypeHebrew": "חיישן הצפה",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "חיישן הצפה ריצפה",
+      "Picture": "water_philio"
+    },
+    {
+      "id": "0e0f",
+      "DeviceId": 18,
+      "InstallDate": "2025-02-23 15:55:18",
+      "LastReportDate": "2025-02-23 15:56:36",
+      "DeviceOK": 1,
+      "DeviceTypeHebrew": "גלאי הזזה",
+      "DeviceType": "Motion",
+      "WebSiteDeviceName": "גלאי תנוע דלת",
+      "Picture": "contact_hanxi"
+    }
+  ],
+  "types": [
+    {
+      "value": "Contact",
+      "viewValue": "Contact"
+    },
+    {
+      "value": "Motion",
+      "viewValue": "Motion"
+    },
+    {
+      "value": "Water",
+      "viewValue": "Water"
+    },
+    {
+      "value": "Boiler",
+      "viewValue": "Boiler"
+    },
+    {
+      "value": "Camera",
+      "viewValue": "Camera"
+    },
+    {
+      "value": "ZwaveLight",
+      "viewValue": "ZwaveLight"
+    }
+  ],
+  "pictures": [
+    {
+      "value": "motion_hanxi",
+      "viewValue": "גלאי תנועה לחדר ארונות"
+    },
+    {
+      "value": "motion_philio",
+      "viewValue": "גלאי תנועה לחדר אמבטיה"
+    },
+    {
+      "value": "contact_hanxi",
+      "viewValue": "גלאי דלת/חלון"
+    },
+    {
+      "value": "water_philio",
+      "viewValue": "חיישן הצפה"
+    },
+    {
+      "value": "boiler_mco_rect",
+      "viewValue": "דוד"
+    },
+    {
+      "value": "zwavelight_mcohome_rect",
+      "viewValue": "בקר תאורה"
+    }
+  ]
+}

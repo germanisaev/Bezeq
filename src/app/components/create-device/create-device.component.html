@@ -1,0 +1,68 @@
+
+  <h2 mat-dialog-title>{{ data.message }}</h2>
+  <mat-dialog-content>
+    <form [formGroup]="deviceForm" (ngSubmit)="onSubmit()">
+      <div>
+        <mat-checkbox formControlName="DeviceOK" class="checkbox-margin">סטטוס ההתקן (תקין / לא תקין)</mat-checkbox>
+      </div>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>סוג ההתקן בעיברית</mat-label>
+        <input matInput formControlName="DeviceTypeHebrew" required>
+        @if(deviceForm.get('DeviceTypeHebrew')?.invalid && deviceForm.get('DeviceTypeHebrew')?.touched){ 
+          <mat-error>
+            שדה חובה
+          </mat-error>
+        }
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>סוג ההתקן</mat-label>
+        <mat-select formControlName="DeviceType">
+          <mat-option>None</mat-option>
+          @for(dt of dTypes; track dt) {
+            <mat-option [value]="dt.value">
+              {{dt.viewValue}}
+            </mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>אתר שם ההתקן</mat-label>
+        <input matInput formControlName="WebSiteDeviceName" required>
+        @if(deviceForm.get('WebSiteDeviceName')?.invalid && deviceForm.get('WebSiteDeviceName')?.touched){ 
+          <mat-error>
+            שדה חובה
+          </mat-error>
+        }
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>תמונה</mat-label>
+        <mat-select formControlName="Picture" [(ngModel)]="selectedValue">
+          <mat-option>None</mat-option>
+          @for(dp of dPictures; track dp) {
+            <mat-option [value]="dp.value">
+              {{dp.viewValue}}
+            </mat-option>
+          }
+        </mat-select>
+      </mat-form-field>
+    
+      <!-- Submit Button -->
+      <div>
+        <button mat-raised-button class="primary" type="submit" [disabled]="deviceForm.invalid">שמור</button>
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close (click)="closeDialog()">סגור</button>
+  </mat-dialog-actions>
+
+@if(formStatus()) {
+  <!-- <div [ngClass]="{ 'success': isSuccess, 'error': !isSuccess }">
+      {{ formStatus() }}
+  </div> -->
+}

@@ -1,0 +1,89 @@
+
+
+.new {
+    background: lightblue;
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.card {
+    flex: 0 1 calc(25% - 1em);
+    transform: scale(0.9);
+    background: lightblue;
+    padding: 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.card:hover {
+    box-shadow: 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+    transform: scale(1) slow;
+}
+
+.image-card {
+    width: 70px;
+    height: auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.mat-icon {
+    border-radius: 50%;
+    /* background-color: red; */
+    width: 20px;
+    height: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.mat-icon.success {
+    background-color: green;
+}
+
+.mat-icon.danger {
+    background-color: red;
+}
+
+/* .success {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+} */
+
+.danger {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+}
+
+.mat-mdc-card-header {
+    display: flex;
+    padding: 16px 16px 0;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.mat-mdc-card-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 8px;
+}
+.card-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center;
+}
