@@ -1,4 +1,4 @@
-import { Component, computed, Inject, model, signal } from '@angular/core';
+import { Component, computed, Inject, model, OnDestroy, signal } from '@angular/core';
 import { BoxDeviceComponent } from '../box-device/box-device.component';
 import { DeviceService } from '../../shared/_services/device.service';
 import { Device } from '../../shared/_models/device';
@@ -16,7 +16,7 @@ import { DatePipe, JsonPipe } from '@angular/common';
 import { DateRangeFilterPipe } from '../../shared/_pipes/date-range-filter.pipe';
 import { MAT_DATE_FORMATS, MatNativeDateModule } from "@angular/material/core";
 import moment from "moment";
-import { filter } from 'rxjs';
+import { filter, Subscription } from 'rxjs';
 import { UtilitiesService } from '../../shared/_services/utilities.service';
 
 // providers: [{ provide: MAT_DATE_LOCALE, useValue: 'es-ES' }]
@@ -48,7 +48,7 @@ import { UtilitiesService } from '../../shared/_services/utilities.service';
   templateUrl: './list-devices.component.html',
   styleUrl: './list-devices.component.css',
 })
-export class ListDevicesComponent {
+export class ListDevicesComponent implements OnDestroy {
 
   devices: any[] = [];
   public value = model(0);
@@ -60,6 +60,7 @@ export class ListDevicesComponent {
   range!: FormGroup;
   start: Date | null = null;
   end: Date | null = null;
+  subscription = new Subscription();
 
   constructor(private _service: DeviceService, 
               private _utilities: UtilitiesService,
@@ -72,13 +73,16 @@ export class ListDevicesComponent {
                 
               this.getAllDevices();
   }
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
 
   get startDate() { return this.range.get('startDate'); }
   get endDate() { return this.range.get('endDate'); }
   
   // Get All Devices from json
   getAllDevices() {
-    this._service.getDeviceList().subscribe({
+    const sub = this._service.getDeviceList().subscribe({
       next: (data: any) => {
         this.devices = data as Device[];
         this.getCalcResult();
@@ -87,6 +91,7 @@ export class ListDevicesComponent {
         console.error('Error fetching repositories', err);
       }
     });
+    this.subscription.add(sub);
   }
 
   getCalcResult() {
